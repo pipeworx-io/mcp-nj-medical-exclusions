@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-nj-medical-exclusions",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "New Jersey Department of the Treasury Ineligible Provider List (Medical category) screening — fleet #3281, the eighth state exclusion pack after mcps/ny-omig-exclusions (#2788), mcps/ca-medical-exclusions (#2805), mcps/tx-medical-exclusions (#2809), mcps/fl-medical-exclusions…",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-nj-medical-exclusions": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "nj-medical-exclusions"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-nj-medical-exclusions.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/nj-medical-exclusions",
   "pipeworx": {
-    "sourceHash": "v1-658bb593a40829cc3cf92130f9ec534eeb5249f2c52aa8ee32e9c45a23de9c47",
-    "sourceCommit": "351c40908821cfecc9bb2f5849d87bbfdbb26d75"
+    "mode": "gateway",
+    "slug": "nj-medical-exclusions",
+    "gatewaySlug": "nj-medical-exclusions",
+    "sourceHash": "v1-91d15f72831e7978cc8e4e97f89a663c3b8498ef2ba298434dafc50c2f8a568a",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }

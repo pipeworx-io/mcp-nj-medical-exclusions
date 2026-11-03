@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-nj-medical-exclusions",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "New Jersey Department of the Treasury Ineligible Provider List (Medical category) screening — fleet #3281, the eighth state exclusion pack after mcps/ny-omig-exclusions (#2788), mcps/ca-medical-exclusions (#2805), mcps/tx-medical-exclusions (#2809), mcps/fl-medical-exclusions…",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "nj-medical-exclusions",
     "gatewaySlug": "nj-medical-exclusions",
-    "sourceHash": "v1-91d15f72831e7978cc8e4e97f89a663c3b8498ef2ba298434dafc50c2f8a568a",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-e737291939af9e07536eaaafb6fe0d493c930588f0af0e94d40234c13735cb27",
+    "sourceCommit": "bed7faa04e7276899b5e3870ef11c98625371f2b"
   }
 }
